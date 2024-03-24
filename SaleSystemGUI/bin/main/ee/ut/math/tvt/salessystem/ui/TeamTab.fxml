@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+
+   <SplitPane dividerPositions="0.4" orientation="VERTICAL" prefHeight="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+         <TitledPane alignment="CENTER" animated="false" collapsible="false" contentDisplay="CENTER" expanded="false" prefHeight="15.0" prefWidth="308.0" text="Team info" textAlignment="CENTER" />
+         <AnchorPane prefHeight="200.0" styleClass="background_style" SplitPane.resizableWithParent="false">
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="308.0">
+               <children>
+                  <VBox prefHeight="150.0" prefWidth="223.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Team name">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <fill>
+                              <Color fx:value="#FFEBCD" /> <!-- Set the text color to #FFEBCD (Blanched Almond) -->
+                           </fill>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Team leader">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <fill>
+                              <Color fx:value="#FFEBCD" /> <!-- Set the text color to #FFEBCD (Blanched Almond) -->
+                           </fill>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Team leader email">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <fill>
+                              <Color fx:value="#FFEBCD" /> <!-- Set the text color to #FFEBCD (Blanched Almond) -->
+                           </fill>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Team members">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <fill>
+                              <Color fx:value="#FFEBCD" /> <!-- Set the text color to #FFEBCD (Blanched Almond) -->
+                           </fill>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="199.0">
+                     <children>
+                        <Text fx:id="teamName" strokeType="OUTSIDE" strokeWidth="0.0" text="Lab1-Svenssons">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <fill>
+                              <Color fx:value="#FFEBCD" /> <!-- Set the text color to #FFEBCD (Blanched Almond) -->
+                           </fill>
+                        </Text>
+                        <Text fx:id="teamLeadName" strokeType="OUTSIDE" strokeWidth="0.0" text="Jon Snow">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <fill>
+                              <Color fx:value="#FFEBCD" /> <!-- Set the text color to #FFEBCD (Blanched Almond) -->
+                           </fill>
+                        </Text>
+                        <Text fx:id="teamLeadMail" strokeType="OUTSIDE" strokeWidth="0.0" text="example@example.com">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <fill>
+                              <Color fx:value="#FFEBCD" /> <!-- Set the text color to #FFEBCD (Blanched Almond) -->
+                           </fill>
+                        </Text>
+                        <Text fx:id="teamMembersName" strokeType="OUTSIDE" strokeWidth="0.0" text="Sam">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <fill>
+                              <Color fx:value="#FFEBCD" /> <!-- Set the text color to #FFEBCD (Blanched Almond) -->
+                           </fill>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <ImageView fitHeight="150.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../src/main/resources/sven.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </AnchorPane>
+      </items>
+   </SplitPane>
+</AnchorPane>

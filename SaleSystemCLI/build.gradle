@@ -1,0 +1,39 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'ee.ut.math.tvt.salessystem.ui.ConsoleUI'
+
+repositories {
+    mavenCentral()
+    google()
+}
+
+version = '1.0'
+
+
+dependencies {
+    implementation project(':')
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.17.1'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.17.1'
+  //  testImplementation group: 'junit', name: 'junit', version:'4.+'
+}
+
+jar {
+    doFirst {
+        manifest {
+            if (!configurations.runtimeClasspath.isEmpty()) {
+                attributes('Class-Path':
+                        configurations.runtimeClasspath.collect{it.toURI().toString()}.join(' '))
+            }
+        }
+    }
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                'Implementation-Version': version,
+                'Main-Class': mainClassName
+    }
+}
+
+run{
+    standardInput = System.in
+ }

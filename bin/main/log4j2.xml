@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level at %logger{1} - Message: %msg%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <!-- Set debug level for specific packages -->
+
+    <Logger name="ee.ut.math.tvt.salessystem" level="debug" additivity="false">
+      <AppenderRef ref="Console" />
+    </Logger>
+
+    <logger name="Ratpack" level="info">
+    </logger>
+
+    <Logger name="org.hibernate" level="off">
+      <AppenderRef ref="Console" />
+    </Logger>
+
+    <!-- Disable logging for all other packages -->
+    <Root level="off">
+      <AppenderRef ref="Console" />
+    </Root>
+  </Loggers>
+</Configuration>
